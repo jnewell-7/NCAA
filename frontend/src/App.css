@@ -40,3 +40,67 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Global styles */
+body {
+  background-color: #1a1a1a; /* Dark background */
+  color: white; /* Default text color */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Welcome header */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Team list container - Updated to Grid */
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Team card styling */
+.team-card {
+  background: white;
+  color: black;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+/* Team name */
+.team-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Mascot name */
+.team-card h3 {
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* Location */
+.team-card p {
+  font-size: 1rem;
+  color: #555;
+}

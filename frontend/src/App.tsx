@@ -21,10 +21,10 @@ function Team({
   state: string;
 }) {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 w-64">
-      <h2 className="text-xl font-bold text-center">{school}</h2>
-      <h3 className="text-md text-gray-600 text-center">{name}</h3>
-      <p className="text-sm text-gray-500 text-center">
+    <div className="team-card">
+      <h2>{school}</h2>
+      <h3>{name}</h3>
+      <p>
         {city}, {state}
       </p>
     </div>
@@ -33,7 +33,7 @@ function Team({
 
 function TeamList() {
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-6">
+    <div className="team-list">
       {teamsData.teams.map((singleTeam) => (
         <Team key={singleTeam.school} {...singleTeam} />
       ))}
